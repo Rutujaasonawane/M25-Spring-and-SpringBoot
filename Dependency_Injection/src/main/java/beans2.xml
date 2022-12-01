@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+    <bean id="col" class="org.tnsindia.dicollection.Collection">
+        <!--java.util.List-->
+        <property name="fruits">
+            <list>
+                <value>Apple</value>
+                <value>Mango</value>
+            </list>
+        </property>
+        <!--java.util.Set-->
+        <property name="cricketers">
+            <set>
+                <value>Virat</value>
+                <value>Dohni</value>
+                <value>Bhubaneswar</value>
+            </set>
+        </property>
+        <!--java.util.Map-->
+        <property name="countryCapital">
+            <map>
+                <entry key="India" value="New Delhi" />
+                <entry key="Russia" value="Moscow" />
+                <entry key="France" value="Paris" />
+            </map>
+        </property>
+    </bean>
+</beans>
